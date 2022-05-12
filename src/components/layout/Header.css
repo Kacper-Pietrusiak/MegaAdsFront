@@ -12,26 +12,10 @@ header h1{
     font-weight: 200;
 }
 
-button{
-    color: white;
-    border: none;
-    background: #2A913E;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 0.8rem;
-    padding: 2px 35px;
-    border-radius: 2px;
-}
-
 .search{
     display: flex;
 }
 
 .search input{
     width: 13rem;
-}
-
-.map{
-    background-color: green;
-    height: calc(100vh - 49px);
 }
