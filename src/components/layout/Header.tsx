@@ -9,7 +9,7 @@ export const Header = () => {
             <Btn text={'Dodaj Ogłoszenie'} color='#00ab00'/>
             <div className="search">
                 <input type="text"/>
-                <Btn text={'szukaj'} color='#00ab00'/>
+                <Btn text={'szukaj'} color='blue'/>
             </div>
         </header>
     );
