@@ -1,5 +1,5 @@
 header{
-    background: #6200EE;
+    background: #1a1515;
     padding: 12px;
     color: white;
     display: flex;
@@ -8,9 +8,15 @@ header{
 }
 
 header h1{
-    font-size: 20px;
+    position: relative;
+    font-size: 2.2rem;
     font-weight: 200;
+    text-shadow:
+            0 0 40px white,
+            0 0 60px white;
 }
+
+
 
 .search{
     display: flex;
@@ -18,4 +24,14 @@ header h1{
 
 .search input{
     width: 13rem;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #00ab00;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.search input:focus{
+    outline: none;
 }

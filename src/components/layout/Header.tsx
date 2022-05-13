@@ -6,10 +6,10 @@ export const Header = () => {
     return (
         <header>
             <h1><strong>Mega</strong> Ogłoszenia</h1>
-            <Btn text={'Dodaj Ogłoszenie'}/>
+            <Btn text={'Dodaj Ogłoszenie'} color='#00ab00'/>
             <div className="search">
                 <input type="text"/>
-                <Btn text={'szukaj'}/>
+                <Btn text={'szukaj'} color='#00ab00'/>
             </div>
         </header>
     );

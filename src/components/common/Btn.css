@@ -1,10 +1,72 @@
 button{
+    position: relative;
     color: white;
     border: none;
     background: #2A913E;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 0.8rem;
-    padding: 2px 35px;
+    font-size: 1.5rem;
+    padding: 0.8rem 2.2rem;
     border-radius: 2px;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+}
+
+button:hover{
+    background: var(--color);
+    color: var(--color);
+    box-shadow: 0 0 35px var(--color);
+}
+
+button::before{
+    content: '';
+    position: absolute;
+    background: #1a1515;
+    inset: 2px;
+}
+
+button span{
+    position: relative;
+    z-index: 1;
+}
+button i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+button i::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: #1a1515;
+    transform: translateX(-50%);
+    transform: skewX(315deg);
+    transition: 0.5s;
+}
+
+button:hover i::before{
+    left: 20%;
+    width: 20px;
+}
+
+button i::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: #1a1515;
+    transform: translateX(-50%);
+    transform: skewX(315deg);
+    transition: 0.5s;
+}
+
+button:hover i::after{
+    left: 80%;
+    width: 20px;
 }
